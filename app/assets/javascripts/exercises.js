@@ -1,5 +1,6 @@
 // // Exercise #1:
 
+<<<<<<< HEAD
 // Recreate the guess a number game between 1 and 100. That is, the computer chooses a random number between 1 and 100, and tells the user to pick higher or lower. The user has 10 tries. Use the prompt function to help you with this.
 // For example:
 
@@ -27,6 +28,8 @@
 
 // // Exercise #2:
 
+=======
+>>>>>>> 3017be9f728c204c5ebddc2dccee05706e870271
 // Do the NASA countdown through the console. That is, the console should say:
 
 // 10
@@ -47,7 +50,7 @@
 // console.log("Blastoff!!")
 // Hint: Use a for loop!
 
-// // Exercise #3:
+// // Exercise #2:
 
 // var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
 
@@ -61,7 +64,7 @@
 
 // Hint: Use a for loop!
 
-// // Exercise #4:
+// // Exercise #3:
 
 // var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
 // var x = 0
@@ -75,9 +78,17 @@
 // Write code that finds the average of all the numbers in the 'numbers' array.
 // Hint: Use a for loop!
 
+// // Exercise #4:
+
+// Implement FizzBuzz in JavaScript. Write a program that prints the integers from 1 to 100.
+// But for multiples of three print "Fizz" instead of the number, and for the multiples of five print "Buzz". 
+// For numbers which are multiples of both three and five print "FizzBuzz".
+
 // // Exercise #5:
 
-// Implement FizzBuzz in JavaScript.
+// Recreate the guess a number game between 1 and 100. That is, the computer chooses a random number between 1 and 100, and tells the user to pick higher or lower. The user has 10 tries. Use the prompt function to help you with this. (NOTE: prompt will return a string, and you may need to "cast" it into a number.)
+// For example:
+// var guess = prompt("Guess a number");
 
 // for (var i = 1; i <= 100; i++) {
 //     var string = '';
@@ -104,7 +115,7 @@
 
 // // Exercise #7:
 
-// Create a function that accepts an array as an argument and returns the average. (Basically the same as Exercise #4, but wrap that code in a function and demonstrate its usage.)
+// Create a function that accepts an array as an argument and returns the average. (Basically the same as Exercise #3, but wrap that code in a function and demonstrate its usage.)
 
 // function averageArray(numOne, numTwo, numThree, numFour) {
 // 	return ((numOne + numTwo + numThree + numFour)/averageArray.length);
@@ -147,7 +158,7 @@
 
 // Add a function to the above book object that console.logs out all the above information 
 
-
+// // Extra exercises can be found here: http://www.ling.gu.se/~lager/teaching/dialogue_systems%20II/labs/javascript.html 
 
 
 

@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def interact
   end
 
+  def click_game
+  end
+
 end

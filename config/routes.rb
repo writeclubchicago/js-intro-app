@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get '/guess' => 'pages#guess'
   get '/interact' => 'pages#interact'
 
+  get '/click-game' => 'pages#click_game'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

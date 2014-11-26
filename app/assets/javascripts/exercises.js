@@ -1,6 +1,6 @@
 // // Exercise #1:
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 // Recreate the guess a number game between 1 and 100. That is, the computer chooses a random number between 1 and 100, and tells the user to pick higher or lower. The user has 10 tries. Use the prompt function to help you with this.
 // For example:
 
@@ -28,8 +28,8 @@
 
 // // Exercise #2:
 
-=======
->>>>>>> 3017be9f728c204c5ebddc2dccee05706e870271
+// =======
+// >>>>>>> 3017be9f728c204c5ebddc2dccee05706e870271
 // Do the NASA countdown through the console. That is, the console should say:
 
 // 10

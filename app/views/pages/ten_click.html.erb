@@ -1,0 +1,10 @@
+<h1>Ten Click</h1>
+
+<div id="ten-click">
+  <div class="row">
+    <% (0..9).to_a.each do |number| %>
+      <div class="box col-md-2" onclick="clickBox(<%= number %>, this)"> </div>
+      <div class="col-md-1"> </div>
+    <% end %>
+  </div>
+</div>

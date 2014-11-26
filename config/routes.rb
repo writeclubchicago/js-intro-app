@@ -7,7 +7,11 @@ Rails.application.routes.draw do
   get '/memory' => 'pages#memory'
   get '/abc' => 'pages#abc'
   get '/maze' => 'pages#maze'
-
+  get '/five_click' => 'pages#five_click'
+  get '/three_each' => 'pages#three_each'
+  get '/ten_boxes' => 'pages#ten_boxes'
+  get '/letter_boxes' => 'pages#letter_boxes'
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

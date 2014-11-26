@@ -22,4 +22,17 @@ class PagesController < ApplicationController
 
   def maze
   end
+
+  def five_click
+  end
+
+  def three_each
+  end
+
+  def ten_boxes
+  end
+
+  def letter_boxes
+  end
+
 end

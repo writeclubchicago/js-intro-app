@@ -2,6 +2,27 @@ body {
 
 }
 
+#ten-boxes {
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 0px 0px 20px 0px;
+    font-size: 500%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .box.right {
+    background-color: green;
+  }
+
+  .box.wrong {
+    background-color: red;
+  }
+}
+
 #box-game {
 
   .box {

@@ -1,0 +1,13 @@
+var count = 0;
+
+function fiveClick() {
+ count = count +1;
+ var color = '#'+Math.floor(Math.random()*16777215).toString(16);
+ document.getElementById("gameBox").style["background-color"] = color;
+ document.querySelector('#countOnPage').innerHTML = 'the number of clicks is ' + count;
+ console.log(count);
+ console.log(color);
+   if (count === 5) {
+    alert("Congrats, you won with " + count + " clicks!");
+   }
+}

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get '/guess' => 'pages#guess'
   get '/interact' => 'pages#interact'
+<<<<<<< HEAD
   get '/tic-tac-toe' => 'pages#tic_tac_toe'
   get '/puzzle' => 'pages#puzzle'
   get '/memory' => 'pages#memory'
@@ -10,6 +11,10 @@ Rails.application.routes.draw do
   get '/five-click' => 'pages#five_click'
   get '/three-boxes' => 'pages#three_boxes'
   get '/ten-click' => 'pages#ten_click'
+=======
+  get '/three' => 'pages#three'
+  get '/numbers' => 'pages#numbers'
+>>>>>>> bea05228bd37b2da1cb704c31ed33513d44606d2
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

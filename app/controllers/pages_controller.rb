@@ -8,12 +8,13 @@ class PagesController < ApplicationController
   def interact
   end
 
-  def tic_tac_toe
+  def three
   end
 
-  def puzzle
+  def numbers
   end
 
+<<<<<<< HEAD
   def memory
   end
 
@@ -25,4 +26,6 @@ class PagesController < ApplicationController
 
   def ten_click
   end
+=======
+>>>>>>> bea05228bd37b2da1cb704c31ed33513d44606d2
 end

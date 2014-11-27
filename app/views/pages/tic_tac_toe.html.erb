@@ -1,0 +1,9 @@
+<div id="game">
+  <h1>Tic-Tac-Toe</h1>
+
+  <div id="tic-tac-toe">
+    <% (0..8).to_a.each do |number| %>
+      <div class="box col-md-3" onclick="ticTacToe(<%= number %>, this)"> </div>
+    <% end %>
+  </div>
+</div>

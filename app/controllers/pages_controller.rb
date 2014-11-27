@@ -35,4 +35,8 @@ class PagesController < ApplicationController
   def letter_boxes
   end
 
+  def crazy_maze
+    @letter_array = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+  end
+
 end

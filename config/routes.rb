@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get '/three_each' => 'pages#three_each'
   get '/ten_boxes' => 'pages#ten_boxes'
   get '/letter_boxes' => 'pages#letter_boxes'
+  get '/crazy_maze' => 'pages#crazy_maze'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

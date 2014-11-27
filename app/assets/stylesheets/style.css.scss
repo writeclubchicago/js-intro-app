@@ -2,6 +2,35 @@ body {
 
 }
 
+#crazy-maze {
+
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 5px 5px 5px 5px;
+    font-size: 100%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  .start {
+    background-color: pink;
+  }
+
+  .box.hover {
+    background-color: orange;
+  }
+
+  #solution {
+    color: red;
+  }
+
+  .box.completeSolution {
+    background: red;
+  }
+}
+
 #ten-boxes {
 
   .box {

@@ -1,0 +1,75 @@
+<span><strong>Crazy Maze!</strong> Start at "A1" End at "15J"</span>
+<span id="solution" onclick="solution()">Show Solution</span>
+
+
+
+
+<div id="crazy-maze">
+  <% (0..9).to_a.each do |number| %> 
+    <div class="row">
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">1<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">2<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">3<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">4<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">5<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">6<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">7<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">8<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">9<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">10<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">11<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">12<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">13<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">14<%= @letter_array[number] %></div>
+
+      <div class="box col-md-2" onmouseover="crazyMaze(this)">15<%= @letter_array[number] %></div>
+
+
+    </div>
+  <% end %> 
+</div>
+
+
+
+
+
+<!-- <div id="ten-boxes">
+  <div class="row">
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2 " onclick="crazyMaze(0, this)">1</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(1, this)">2</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(2, this)">3</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(3, this)">4</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(4, this)">5</div>
+  </div>
+  <div class="row">
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2 " onclick="crazyMaze(5, this)">6</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(6, this)">7</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(7, this)">8</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(8, this)">9</div>
+    <div class="col-md-1"> </div>
+    <div class="box col-md-2" onclick="crazyMaze(9, this)">10</div>
+  </div>
+</div> -->

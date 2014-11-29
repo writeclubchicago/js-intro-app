@@ -2,10 +2,11 @@ var playerOne = "X"
 var playerTwo = "O"
 var boxesClicked =  [];
 var turn = 1;
+var firstSquare = 0;                        // For singleCheckLengths, line 38.
 var rowLength = 3;
-var numberOfRows = rowLength;
+var numberOfRows = rowLength;                   // Game box must be square.
 var numberOfBoxes = rowLength * numberOfRows;
-var win = true;
+var win = true;                                 // For checkWin(), line 33.
  
 function ticTacToe(boxNumber, box) {
   
@@ -24,18 +25,28 @@ function ticTacToe(boxNumber, box) {
 }
  
 function boxUnclicked(boxNumber) {
-  return !boxesClicked[boxNumber];
+  return !boxesClicked[boxNumber];  // Checks boxesClicked array; function 
+                                    //   returns false if it finds a value 
+                                    //   (i.e. is clicked).
 }
  
 function checkWin(player) {
-  var winCons = [[0, numberOfBoxes, rowLength], [0, rowLength, 1], [0, 1, 1], [(rowLength-1), rowLength, 1]];
+  // Listed in [row, column, forward slash diagonal, backslash diagonal] order.
+  var startingBoxes = [0, 0, 0, (rowLength-1)];
+  var endOfChecks = [numberOfBoxes, rowLength, 1, rowLength];
+  var nextStartingBoxDistances = [rowLength, 1, 1, 1];
+  var nextBoxes = [1, rowLength, (rowLength+1), (rowLength-1)];
 
-  for (var i = 0; i < winCons.length; i++) {
-    for (var j = winCons[i][0]; j < winCons[i][1]; j += winCons[i][2]) {
+  for (var i = 0; i < 4; i++) {
+    // Iterating through the above win conditions.
+    for (var j = startingBoxes[i]; j < endOfChecks[i]; j += nextStartingBoxDistances[i]) {
       win = true;
-      configurations = [[(j+rowLength), 1], [numberOfBoxes, rowLength], [numberOfBoxes, (rowLength+1)], [((numberOfBoxes-rowLength)+1), (rowLength-1)]];
+      // singleCheckLengths is defined here because of the row condition's 
+      //   dynamic start box.
+      var singleCheckLengths = [(j+rowLength), numberOfBoxes, 
+                                numberOfBoxes, ((numberOfBoxes-rowLength)+1)];
 
-      checkSquares(j, player, (configurations[i][0]), (configurations[i][1]));
+      checkSquares(j, player, singleCheckLengths[i], nextBoxes[i]);
       if (win) {
         alert("Player " + player + " wins!");
       }
@@ -43,10 +54,11 @@ function checkWin(player) {
   }
 }
 
-function checkSquares(box, player, length, iterator) {
-  for (var k = box; k < length; k += iterator) {
-    if (boxesClicked[k] !== player) {
-      win = false;
+function checkSquares(startingBox, currentPlayer, lengthOfCheck, distanceToNextBox) {
+  for (var i = startingBox; i < lengthOfCheck; i += distanceToNextBox) {
+    if (boxesClicked[i] !== currentPlayer) {
+      win = false;    // If the box being checked hasn't been clicked by the 
+                      //   current player, the current player doesn't win.
     }
   }
 }

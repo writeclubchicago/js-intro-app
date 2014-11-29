@@ -54,3 +54,35 @@
   // } else if (boxesClicked[rowLength-1] === player && boxesClicked[(i-1)*(rowLength-1)] === player && boxesClicked[numberOfRows*(rowLength-1)] === player) {
   //   win = true;
   // }
+
+
+
+
+  // [starting square, when to stop, distance to next starting square]
+  // var winParameters = [
+  //   [0, numberOfBoxes, rowLength],  // Parameters for checking a row.
+  //   [0, rowLength, 1],              // Parameters for checking a column.
+  //   [0, 1, 1],                      // Parameters for checking the forward
+  //                                   //   slash diagonal.
+  //   [(rowLength-1), rowLength, 1]   // Parameters for checking the backslash 
+  //                                   //   diagonal.
+  // ];
+
+//   for (var i = 0; i < winParameters.length; i++) {
+//     // runs through each winParamter
+//     for (var j = winParameters[i][0]; j < winParameters[i][1]; j += winParameters[i][2]) {
+//       win = true;
+//       configurations = [
+//         [(j+rowLength), 1], 
+//         [numberOfBoxes, rowLength], 
+//         [numberOfBoxes, (rowLength+1)], 
+//         [((numberOfBoxes-rowLength)+1), (rowLength-1)]
+//       ];
+
+//       checkSquares(j, player, (configurations[i][0]), (configurations[i][1]));
+//       if (win) {
+//         alert("Player " + player + " wins!");
+//       }
+//     }
+//   }
+// }

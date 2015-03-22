@@ -87,16 +87,32 @@
 
 // To convert a string into a number:
 
+// "234".to_i
+
 // var str = "234";
 // var num = parseInt(str);
 
 // To convert a number into a string:
+
+// 234.to_s
 
 // var num = 234
 // var str = num.toString();
 
 // // Conditionals
 
+// Ruby:
+// if x > 50
+//   puts "High number"
+// elsif x < 25
+//   puts "Low number"
+// elsif x == 31
+//   puts "My favorite number"
+// else
+//   puts "Medium number"
+// end
+
+// JS:
 // if (x > 50) {
 //   console.log("High number");
 // } else if (x < 25) {
@@ -120,7 +136,8 @@
 
 // // random number between 1 and 10:
 
-// console.log(Math.floor((Math.random() * 10) + 1));
+// RUBY: rand(1..10)
+// JS: console.log(Math.floor((Math.random() * 10) + 1));
 
 // // While loops
 
@@ -128,7 +145,7 @@
 // var text = "";
 
 // while (i < 10) {
-//     text += " The number is " + i;
+//     text = text + " The number is " + i;
 //     i++;
 // }
 
@@ -144,6 +161,12 @@
 
 // // For loops
 
+// i = 0
+// RUBY: 10.times do 
+  // i += 1
+  // puts i
+// end
+
 // for(var i = 0; i < 10; i++) {
 //   console.log(i);
 // }
@@ -154,10 +177,10 @@
 
 // // How to "each" through an array:
 
-// var x = ["apple", "banana", "carrot", "date", "escarole", "fig", "gourd", "hmm", "igloo", "jam", "kazoo", "lamp", "mouse"];
+// var words = ["apple", "banana", "carrot", "date", "escarole", "fig", "gourd", "hmm", "igloo", "jam", "kazoo", "lamp", "mouse"];
 
-// for(var i = 0; i < x.length; i++) {
-//   console.log(x[i]);
+// for(var i = 0; i < words.length; i++) {
+//   console.log(words[i]);
 // }
 
 // // Functions (similar to Ruby methods, but still quite different, as you'll see later on.)
@@ -196,11 +219,18 @@
 
 // // Functions are first class citizens:
 
+// CLASSICAL DEFINITION OF FUNCTION:
+
+// function cool() {
+//   console.log("A variable can contain a function!");
+// }
+
 // var cool = function() {
 //   console.log("A variable can contain a function!");
 // }
 
 // cool();
+// console.log(typeof cool);
 
 // Functions can also, therefore, be one of the properties of an object
 
@@ -214,13 +244,12 @@
 
 // end
 
-
 // var car = {
 
 //   model: "Buick",
 //   year: 2004,
 //   miles: 20000,
-//   toString: function () {
+//   printMessage: function () {
 //     return this.model + " has done " + this.miles + " miles";
 //   }
 
@@ -228,7 +257,7 @@
 
 // console.log(car["model"]);
 // console.log(car.year);
-// console.log(car.toString());
+// console.log(car.printMessage());
 
 // // Constructors (the closest thing to Ruby classes)
 
@@ -254,7 +283,6 @@ var civic = new Car( "Honda Civic", 2009, 20000 );
 // // these objects
 // console.log( civic );
 // console.log( mondeo.toString() );
-
 
 
 
